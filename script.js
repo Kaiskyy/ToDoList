@@ -20,7 +20,7 @@ function addTask() {
      }
 
      if (taskText.length >= maxTaskText) {
-        alert("Task cant be more than 49 characters")
+        alert("Task cant be more than 48 characters")
         return
      }
 
@@ -34,17 +34,20 @@ function addTask() {
         listItem.style.display = "flex"; 
         listItem.style.alignItems = "center"; 
         listItem.style.justifyContent = "space-between"; 
-        listItem.style.marginRight  = "2.5%"
         listItem.style.maxWidth = "100%"
        
+       if (window.matchMedia("(min-width: 2500px)").matches) {
+        listItem.style.marginRight = "20%"
+       }
 
-       let textContainer = document.createElement("span")
-       textContainer.textContent = taskText
+       listItem.style.marginRight  = "3.2%"
+
+        let textContainer = document.createElement("span")
+        textContainer.textContent = taskText
 
 
 
-       let buttonContainer = document.createElement("div")
-
+        let buttonContainer = document.createElement("div")
         buttonContainer.style.display = "flex"
        
         let deleteButton = document.createElement("button");

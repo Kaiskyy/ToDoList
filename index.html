@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +11,36 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
-    <h1 class="headerText">To Do Trek</h1>
-<div class="container">
-<div class="inhoud">
-    <input type="text" id="input" placeholder="Task to be done..">
-    <button onclick="addTask()" class="addTaskButton">Add</button>
-</div>
 
-<div class="tasksBackground">
-    <ul id="taskList">
-       
-    </ul>
-</div>
-</div>
+
+    <div class="nav-bar">
+        <div class="logoTextDiv">
+            <h3 class="logoText">ToDoTrek</h3>
+        </div>
+        <div class="search-bar">
+            <!--- <img src="vergrootglas.png" height="10px" width="10px" class="img"> -->
+            <input type="text" id="search-bar" placeholder="Search a Task..">
+        </div>
+        <div class="buttons">
+            <button class="loginButton">Login</button>
+            <button class="signupButton">Signup</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="inhoud">
+            <input type="text" id="input" placeholder="Task to be done..">
+            <button onclick="addTask()" class="addTaskButton">Add</button>
+        </div>
+
+        <div class="tasksBackground">
+            <ul id="taskList">
+
+            </ul>
+        </div>
+    </div>
 </body>
-</html> 
 
+</html>
