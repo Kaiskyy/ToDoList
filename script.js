@@ -1,6 +1,7 @@
 function addTask() {
     
     let maxTasks = 14
+    let maxTaskText = 49
     
     let input = document.getElementById("input")
     let taskList = document.getElementById("taskList")
@@ -9,13 +10,18 @@ function addTask() {
 
 
     if (input.value === "") {
-        alert("Put in a task first!")
+        alert("Put in a task first")
         return
      }
 
      if (taskList.children.length >= maxTasks) {
-      alert("Cant add more tasks!")
+      alert("Cant add more tasks")
       return
+     }
+
+     if (taskText.length >= maxTaskText) {
+        alert("Task cant be more than 49 characters")
+        return
      }
 
     let listItem = document.createElement("li")
@@ -30,13 +36,22 @@ function addTask() {
         listItem.style.justifyContent = "space-between"; 
         listItem.style.marginRight  = "2.5%"
         listItem.style.maxWidth = "100%"
+       
+
+       let textContainer = document.createElement("span")
+       textContainer.textContent = taskText
 
 
+
+       let buttonContainer = document.createElement("div")
+
+        buttonContainer.style.display = "flex"
        
         let deleteButton = document.createElement("button");
 
       
         deleteButton.textContent = "Delete";
+
         deleteButton.style.color = "white";
         deleteButton.style.backgroundColor = "red";
         deleteButton.style.border = "none";
@@ -44,13 +59,40 @@ function addTask() {
         deleteButton.style.borderRadius = "5px";
         deleteButton.style.cursor = "pointer";
         deleteButton.style.marginLeft = "10px";
+
+
+        let doneButton = document.createElement("button");
+
+        doneButton.textContent = "Done"
+
+        doneButton.style.color = "white";
+        doneButton.style.backgroundColor = "green";
+        doneButton.style.border = "none";
+        doneButton.style.padding = "5px 10px";
+        doneButton.style.borderRadius = "5px";
+        doneButton.style.cursor = "pointer";
+      
+
+
    
 
-    listItem.textContent = taskText
+  
 
     taskList.appendChild(listItem)
+    
+    listItem.appendChild(textContainer)
+    listItem.appendChild(buttonContainer)
 
-    listItem.appendChild(deleteButton)
+    buttonContainer.appendChild(doneButton)
+
+    buttonContainer.appendChild(deleteButton)
+
+  
+
+    doneButton.addEventListener("click", function() {
+        textContainer.style.textDecoration = "line-through"
+      
+    })
 
     deleteButton.addEventListener("click", function() {
         listItem.remove()
