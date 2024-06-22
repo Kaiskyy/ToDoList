@@ -29,7 +29,7 @@ function addTask() {
     listItem.style.backgroundColor = "white";
         listItem.style.padding = "2%";
         listItem.style.borderRadius = "10px";
-        listItem.style.border = "2px solid rgb(26, 95, 243)";
+        listItem.style.border = "1px solid rgb(26, 95, 243)";
         listItem.style.marginBottom = "1%";
         listItem.style.display = "flex"; 
         listItem.style.alignItems = "center"; 
