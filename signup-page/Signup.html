@@ -8,10 +8,53 @@
     <meta name="keywords" content="todolist, taken">
     <meta name="author" content="Flem">
     <title>ToDoTrek</title>
-    <link rel="stylesheet" href="login.css">
-    <script src="login.js"></script>
+    <link rel="stylesheet" href="signup.css">
+    <script type="module" src="signup.js"></script>
 </head>
 <body>
+
+    <div class="nav-bar">
+        <div class="logoTextDiv">
+           <a href="../home-page/index.html" class="logoTextLink"><h3 class="logoText">ToDoTrek</h3></a>
+        </div>
+        <div class="buttons">
+            <a href="../login-page/login.html">
+                <button class="loginButton">Login</button>
+            </a>
+            <a href="../signup-page/Signup.html">
+                <button class="signupButton">Signup</button>
+            </a>
+            <button class="myaccountButton">My Acc</button>
+        </div>
+    </div>
+
+    <div class="elements">
+        <div class="headerText">
+            Welcome!
+            <p>Signup to be able to see your account information. Storing tasks<br> into an account coming soon!</p>
+        </div>
+
+        <div class="loginElements">
+            <div class="emailForm">
+                <p class="emailP">Email</p>
+                <br>
+                <input type="text" id="emailInput">
+            </div>
+            <div class="passwordForm">
+                <p class="passwordP">Password</p>
+                <br>
+                <input type="text" id="passwordInput" >
+            </div>
+
+            <div class="loginButtonForm">
+                <button id="button">Signup</button>
+            </div>
+
+            <div class="makeAccText">
+                <p>Already have an account? <a href="../login-page/login.html">Log in to your account</a></p>
+            </div>
+        </div>
+    </div>
 
 
 </body>

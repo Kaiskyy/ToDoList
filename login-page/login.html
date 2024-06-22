@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,53 @@
     <link rel="stylesheet" href="login.css">
     <script src="login.js"></script>
 </head>
+
 <body>
+
+    <div class="nav-bar">
+        <div class="logoTextDiv">
+            <a href="../home-page/index.html" class="logoTextLink"><h3 class="logoText">ToDoTrek</h3></a>
+        </div>
+        <div class="buttons">
+            <a href="../login-page/login.html">
+                <button class="loginButton">Login</button>
+            </a>
+            <a href="../signup-page/Signup.html">
+                <button class="signupButton">Signup</button>
+            </a>
+            <button class="myaccountButton">My Acc</button>
+        </div>
+    </div>
+
+
+    <div class="elements">
+        <div class="headerText">
+            Welcome back!
+            <p>Login to have acces to your account information. Storing tasks<br> into an account coming soon!</p>
+        </div>
+
+        <div class="loginElements">
+            <div class="emailForm">
+                <p class="emailP">Email</p>
+                <br>
+                <input type="text" id="emailInput">
+            </div>
+            <div class="passwordForm">
+                <p class="passwordP">Password</p>
+                <br>
+                <input type="text" id="passwordInput" >
+            </div>
+
+            <div class="loginButtonForm">
+                <button onclick="comingSoon()">Login</button>
+            </div>
+
+            <div class="makeAccText">
+                <p>Dont have an account yet? <a href="../signup-page/Signup.html">Create an account</a></p>
+            </div>
+        </div>
+    </div>
+
 
 
 </body>
