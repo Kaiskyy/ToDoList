@@ -54,6 +54,11 @@ html {
     margin-right: 15px;
 }
 
+.signoutButton:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
 .signupButton {
     padding: 12px 21px 12px 21px;
     border: 0px;

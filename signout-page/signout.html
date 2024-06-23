@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="nl">
-<html>
 
 <head>
     <meta charset="UTF-8">
@@ -9,58 +8,42 @@
     <meta name="keywords" content="todolist, taken">
     <meta name="author" content="Flem">
     <title>ToDoTrek</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signout.css">
+    <script type="module" src="signout.js"></script>
 </head>
 
 <body>
+
 
     <div class="nav-bar">
         <div class="logoTextDiv">
             <a href="../home-page/index.html" class="logoTextLink"><h3 class="logoText">ToDoTrek</h3></a>
         </div>
+       <!--- COMING SOON <div class="search-bar">
+            <input type="text" id="search-bar" placeholder="Search a Task..">
+        </div> -->
         <div class="buttons">
             <a href="../login-page/login.html">
                 <button class="loginButton">Login</button>
             </a>
+            
             <a href="../signout-page/signout.html"><button class="signoutButton">Sign out</button></a>
+               
+            </a>
+
             <a href="../signup-page/Signup.html">
                 <button class="signupButton">Sign up</button>
             </a>
+
             <a href="../my-account/myaccount.html"><button class="myaccountButton">My Acc</button></a>
         </div>
     </div>
 
-
-    <div class="elements">
-        <div class="headerText">
-            Welcome back!
-            <p>Login to have acces to your account information. Storing tasks<br> into an account coming soon!</p>
-        </div>
-
-        <div class="loginElements">
-            <div class="emailForm">
-                <p class="emailP">Email</p>
-                <br>
-                <input type="text" id="emailInput">
-            </div>
-            <div class="passwordForm">
-                <p class="passwordP">Password</p>
-                <br>
-                <input type="password" type="text" id="passwordInput" >
-            </div>
-
-            <div class="loginButtonForm">
-                <button id="button">Login</button>
-            </div>
-
-            <div class="makeAccText">
-                <p>Dont have an account yet? <a href="../signup-page/Signup.html">Create an account</a></p>
-            </div>
-        </div>
+<div class="elements">
+    <div class="headerText">
+        Are you sure you want to log out?
+        <p>Login to have acces to your account information. Storing tasks<br> into an account coming soon!</p>
     </div>
-
-    <script type="module" src="login.js"></script>
-
+</div>
 </body>
-
 </html>
