@@ -15,11 +15,20 @@ let email = document.getElementById("emailInput")
 let password = document.getElementById("passwordInput")
 let button = document.getElementById("button")
 
-button.addEventListener('click', function() {
- signUp()
+button.addEventListener('click', async function() {
+    const { data: { user } } = await supabase.auth.getUser() 
+    if(user) {
+        alert("You are already logged in!")
+    }
+ else {
+    login()
+ }
 })
 
-async function signUp(){
+
+
+
+async function login(){
 
   
 let { data, error } = await supabase.auth.signInWithPassword({
@@ -46,7 +55,7 @@ let { data, error } = await supabase.auth.signInWithPassword({
 const { data: { user } } = await supabase.auth.getUser()
 
 if (user) {
-    //window.location.href = "loginsucces.html"
+    window.location.href = "loginsucces.html"
 }
 
     }

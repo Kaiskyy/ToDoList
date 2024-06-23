@@ -11,6 +11,26 @@ const supabase_url = 'https://wpmhrjyktuyuhpyhxapz.supabase.co';
 export const supabase = createClient(supabase_url, puplic_key)
 
 
+
+let currentPage = window.location.pathname 
+let targetPage = '/my-account/myaccount.html';
+
+if (currentPage === targetPage) {
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) {
+       let notloggedinText = document.getElementById("notloggedinText")
+       notloggedinText.style.display = "block" 
+       let bodyElements = document.getElementById("bodyelementsId")
+       bodyElements.style.opacity = "0.4"
+    }
+}
+
+
+
+
+
+
+
 let myDetailsButton = document.getElementById("myDetails1")
 let myDetails = document.getElementById("myDetails")
 let comingSoonButton1 = document.getElementById("comingSoon1")
@@ -51,6 +71,9 @@ if (user) {
       emailSpawner.appendChild(userEmail)
 }
 }
+
+
+
 
 
    

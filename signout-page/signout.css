@@ -42,7 +42,7 @@ html {
     margin-right: 15px;
 }
 
-.signoutButton {
+#signoutButton {
     padding: 12px 21px 12px 21px;
     border: 0px;
     background-color: rgb(47, 47, 47);
@@ -52,7 +52,7 @@ html {
     margin-right: 15px;
 }
 
-.signoutButton:hover {
+#signoutButton:hover {
     opacity: 0.7;
     transition: 0.3s;
 }
@@ -129,19 +129,42 @@ html {
 
 .headerText {
     text-align: center;
-    margin-top: 4%;
+    margin-top: 10%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
+    position: relative;
+}
+
+.logout{
+    text-align: center;
+    margin-top: 4%;
+    position: relative;
 }
 
 
-.headerText p {
-    font-weight: normal;
-    font-size: 1.1rem;
-    opacity: 0.6;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-   
+.logout button {
+    border: 0px;
+    background-color: rgb(26, 95, 243);
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    padding: 20px 60px 20px 60px
 }
 
+.logout button:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.logout::after {
+    display: block;
+    width: 15%;
+    height: 1px; /* Pas deze waarde aan voor de hoogte van de lijn */
+    background-color: rgb(114, 114, 114);
+    content: '';
+    margin: 10px auto 0;
+    opacity: 0.3;
+    margin-top: -110px;
+}

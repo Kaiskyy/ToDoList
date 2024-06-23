@@ -311,6 +311,13 @@ opacity: 0.4;
    text-align: center;
 }
 
+#notloggedinText {
+    text-align: center;
+    margin-top: 6%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    opacity: 0.9;
+}
 
 
 

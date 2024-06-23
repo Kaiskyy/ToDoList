@@ -9,7 +9,6 @@
     <meta name="author" content="Flem">
     <title>ToDoTrek</title>
     <link rel="stylesheet" href="signout.css">
-    <script type="module" src="signout.js"></script>
 </head>
 
 <body>
@@ -27,7 +26,7 @@
                 <button class="loginButton">Login</button>
             </a>
             
-            <a href="../signout-page/signout.html"><button class="signoutButton">Sign out</button></a>
+            <a href="../signout-page/signout.html"><button id="signoutButton">Log out</button></a>
                
             </a>
 
@@ -42,8 +41,12 @@
 <div class="elements">
     <div class="headerText">
         Are you sure you want to log out?
-        <p>Login to have acces to your account information. Storing tasks<br> into an account coming soon!</p>
+    </div>
+
+    <div class="logout">
+        <button id="biglogoutButton">Log out</button>
     </div>
 </div>
+ <script type="module" src="signout.js"></script>
 </body>
 </html>
