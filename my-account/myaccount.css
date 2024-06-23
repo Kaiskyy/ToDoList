@@ -1,0 +1,311 @@
+body {
+   
+    height: 100%;
+    margin: 0;
+   background-color: rgb(243, 242, 242);
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+
+/*nav bar*/
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0px 0px 3px gray;
+ }
+
+.buttons {
+   float: right;
+   display: flex;
+   margin-left: 12%;
+   margin-right: 10%;
+   
+   
+}
+
+.loginButton {
+    padding: 12px 21px 12px 21px;
+    border: 0px;
+    background-color: rgb(26, 95, 243);
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    margin-right: 15px;
+}
+
+.signupButton {
+    padding: 12px 21px 12px 21px;
+    border: 0px;
+    background-color: rgb(47, 47, 47);
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    margin-right: 15px;
+}
+
+.myaccountButton {
+    padding: 12px 21px 12px 21px;
+    border: 0px;
+    background-color: rgb(47, 47, 47);
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+   
+}
+
+.myaccountButton:hover {
+    opacity: 0.7; 
+    transition: opacity 0.3s;
+}
+
+.loginButton:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.signupButton:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+#search-bar {
+    border-radius: 60px;
+    border: 1px solid rgb(148, 148, 148);
+    width: 350%;
+    padding: 10px 10px 10px 40px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.logoText {
+  
+    
+    margin-left: 140%;
+     font-size: 1.6rem;
+     color: rgb(0, 0, 0);
+     font-weight: 530;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     
+  }
+
+  
+.logoTextDiv a {
+    text-decoration: none;
+}
+
+.logoTextDiv a:hover {
+    opacity: 0.65;
+    transition: 0.3s;
+}
+
+
+
+
+
+/*body elements*/ 
+
+.bodyElements {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.myaccText p {
+    
+    
+    margin-top: 4.5%;
+    font-size: 2.2rem;
+}
+
+.navbarButtons {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    margin-top: 2.5;
+    
+}
+
+.navbarButtons button {
+    margin-bottom: 19%;
+    border: 0px;
+    background-color: rgb(243, 242, 242);
+    opacity: 0.8;
+    display: block;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.navbarButtons button:hover {
+opacity: 0.4;
+}
+
+.bodyElements {
+    margin-top: 4%;
+    justify-content: center;
+    display: flex;
+}
+
+
+.maketxtInvisible {
+    opacity: 0;
+}
+
+#myDetails {
+    height: 1000px;
+    width: 1100px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(189, 189, 189);
+    margin-left: 3%;
+    margin-top: 2%;
+   
+}
+
+.personalInfo {
+   margin-left: 5%;
+   opacity: 0.9;
+   position: relative;
+   font-size: 1.1rem;
+}
+
+.personalInfo::after {
+    width: 95%;
+    height: 1px;
+    background-color: rgb(173, 173, 173);
+    position: absolute;
+    bottom: -15px;
+    content: '';
+    left:0;
+    opacity: 0.6;
+}
+
+.personalinfoText {
+    margin-left: 5%;
+   
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+}
+
+.personalinfoText p {
+   opacity: 0.4;
+}
+
+.personalinfo1 {
+    width: 165px;
+    height: 25px;
+    background-color: rgb(245, 245, 245);
+    margin-right: 10%;
+    border-radius: 2px;
+    border: 1px solid rgb(151, 151, 151);
+    opacity: 0.4;
+}
+
+.personalinfo2 {
+    width: 165px;
+    height: 25px;
+    background-color: rgb(245, 245, 245);
+    margin-right: 10%;
+    border-radius: 2px;
+    border: 1px solid rgb(151, 151, 151);
+    opacity: 0.4;
+}
+
+.personalinfoBoxes {
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+}
+
+.textanddivCollum1 {
+    margin-right: 10%;
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    opacity: 0.4;
+}
+
+.textanddivCollum2 {
+    font-size: 0.9rem;
+    opacity: 0.4;
+}
+
+
+.mydetailsText {
+    margin-left: 5%;
+    margin-top: 6%;
+    font-size: 1.8rem;
+    letter-spacing: 0.4px;
+    margin-bottom: 4%;
+    opacity: 0.9;
+}
+
+
+
+
+
+.headerText {
+    margin-left: 5%;
+    margin-top: 15%;
+    opacity: 0.9;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.emailadresText::after {
+    width: 95%;
+    height: 1px;
+    background-color: rgb(173, 173, 173);
+    position: absolute;
+    bottom: -15px;
+    content: '';
+    left:0;
+    opacity: 0.6;
+}
+
+
+.emailadresElements {
+    display: flex;
+    flex-direction: row;
+}
+
+.emailadresElements p {
+    margin-top: 8%;
+    margin-left: 5%;
+    opacity: 0.8;
+    margin-right: 16%;
+}
+
+#emailadresSpawner {
+    width: 260px;
+    height: 25px;
+    background-color: rgb(249, 249, 249);
+    margin-top: 8.7%;
+   border: 1px solid rgb(152, 152, 152);
+   opacity: 0.9;
+}
+
+
+
+
+
+#comingSoon {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+
