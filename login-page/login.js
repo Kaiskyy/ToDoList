@@ -34,7 +34,7 @@ let { data, error } = await supabase.auth.signInWithPassword({
 
       if (error){
         alert(error.message)
-        return
+        
       }
 
       if (data) {
@@ -46,7 +46,7 @@ let { data, error } = await supabase.auth.signInWithPassword({
 const { data: { user } } = await supabase.auth.getUser()
 
 if (user) {
-    window.location.href = "loginsucces.html"
+    //window.location.href = "loginsucces.html"
 }
 
     }

@@ -13,14 +13,27 @@ export const supabase = createClient(supabase_url, puplic_key)
 
 let myDetailsButton = document.getElementById("myDetails1")
 let myDetails = document.getElementById("myDetails")
-let comingSoonButton = document.getElementById("comingSoon1")
+let comingSoonButton1 = document.getElementById("comingSoon1")
+let comingSoonButton2 = document.getElementById("comingSoon2")
+let comingSoonButton3 = document.getElementById("comingSoon3")
 
 myDetailsButton.addEventListener("click", function(){
     myDetails.style.display = 'block'
     comingSoon.style.display = "none"
 })
 
-comingSoonButton.addEventListener("click", function(){
+
+comingSoonButton1.addEventListener("click", function(){
+    comingSoon.style.display = "block"
+    myDetails.style.display = "none"
+})
+
+comingSoonButton2.addEventListener("click", function(){
+    comingSoon.style.display = "block"
+    myDetails.style.display = "none"
+})
+
+comingSoonButton3.addEventListener("click", function(){
     comingSoon.style.display = "block"
     myDetails.style.display = "none"
 })
@@ -31,8 +44,11 @@ async function getuserFunction(){
 const { data: { user } } = await supabase.auth.getUser()
 
 if (user) {
+
+    let userEmail = document.createTextNode(user.email)
+
     let emailSpawner = document.getElementById("emailadresSpawner")
-    emailSpawner.appendChild(user)
+      emailSpawner.appendChild(userEmail)
 }
 }
 

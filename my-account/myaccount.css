@@ -293,6 +293,7 @@ opacity: 0.4;
     margin-top: 8.7%;
    border: 1px solid rgb(152, 152, 152);
    opacity: 0.9;
+   text-align: center;
 }
 
 
@@ -300,10 +301,18 @@ opacity: 0.4;
 
 
 #comingSoon {
-    height: 300px;
-    width: 300px;
+    height: 1000px;
+    width: 1100px;
     background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(189, 189, 189);
+    margin-left: 3%;
+    margin-top: 2%;
     text-align: center;
+}
+
+#comingSoon p {
+    margin-top: 5%;
 }
 
 
