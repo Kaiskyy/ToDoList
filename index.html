@@ -1,4 +1,62 @@
 <!DOCTYPE html>
-<html>
-    testst
-</html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Een mooie todolist website.">
+    <meta name="keywords" content="todolist, taken">
+    <meta name="author" content="Flem">
+    <title>ToDoTrek</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+    <div class="nav-bar">
+        <div class="logoTextDiv">
+            <h3 class="logoText">ToDoTrek</h3>
+        </div>
+       <!--- COMING SOON <div class="search-bar">
+            <input type="text" id="search-bar" placeholder="Search a Task..">
+        </div> -->
+        <div class="buttons">
+            <a href="../login-page/login.html">
+                <button class="loginButton">Login</button>
+            </a>
+            <a href="../signout-page/signout.html"><button class="signoutButton">Log out</button></a>
+            <a href="../signup-page/Signup.html">
+                <button class="signupButton">Sign up</button>
+            </a>
+            <a href="../my-account/myaccount.html"><button class="myaccountButton">My Acc</button></a>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="headerText">
+            Empower your productivity
+            <br> with TodoTrek!
+            <h3>Here you can manage all you're tasks to have a clear<br> overview of everything you have to do and have done</h3>
+        </div>
+
+        <div clas="headerButtons">
+            <a href="../login-page/login.html"><button class="loginButtonHeader">Login</button></a>
+            <a href="../signup-page/Signup.html"><button class="signupHeader">Signup</button></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="inhoud">
+            <input type="text" id="input" placeholder="Task to be done..">
+            <button onclick="addTask()" class="addTaskButton">Add</button>
+        </div>
+
+        <div class="tasksBackground">
+            <ul id="taskList">
+
+            </ul>
+        </div>
+    </div>
+</body>
