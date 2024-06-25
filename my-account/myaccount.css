@@ -390,6 +390,12 @@ opacity: 0.4;
         margin-top: 10px;
     }
 
+
+    .myaccText {
+        margin-left: -3px;
+    }
+
+
     .myaccText p {
         font-size: 1.7rem;
         width:  120%;
@@ -399,36 +405,40 @@ opacity: 0.4;
         margin-bottom: 7px;
         background-color: rgb(219, 219, 219);
         border-radius: 3px;
-        width: 110px;
+        width: 125px;
         height: 25px;
         text-align: center;
+        color: black;
     }
 
     #comingSoon1 {
         margin-bottom: 7px;
         background-color: rgb(219, 219, 219);
         border-radius: 3px;
-        width: 110px;
+        width: 125px;
         height: 25px;
         text-align: center;
+        color: black;
     }
 
     #comingSoon2 {
         margin-bottom: 7px;
         background-color: rgb(219, 219, 219);
         border-radius: 3px;
-        width: 110px;
+        width: 125px;
         height: 25px;
         text-align: center;
+        color: black;
     }
 
     #comingSoon3 {
         margin-bottom: 7px;
         background-color: rgb(219, 219, 219);
         border-radius: 3px;
-        width: 110px;
+        width: 125px;
         height: 25px;
         text-align: center;
+        color: black;
     }
 
     .navbarButtons {
