@@ -61,3 +61,35 @@ margin-bottom: 4%;
 body {
     background-color: rgb(222, 222, 222);
 }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .header {
+    font-size: 1.9rem;
+    margin-bottom: 13px;
+    }
+
+    .childHeader {
+        font-size: 1rem;
+        max-width: 80%;
+    }
+    
+    .buttons button {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 0.8rem;
+        margin-top: 15px;
+    }
+
+    
+   
+    
+    
+    
+    }
