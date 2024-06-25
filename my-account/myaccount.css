@@ -385,10 +385,19 @@ opacity: 0.4;
         margin-top: 330px;
     }
 
-    .textandButton {
-        margin-left: 112%;
-        margin-top: 10px;
+    .bodyElements {
+        display: flex;
+        flex-direction: column;
+        
     }
+
+    .textandButton {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
 
 
     .myaccText {
@@ -443,6 +452,18 @@ opacity: 0.4;
 
     .navbarButtons {
         margin-top: -12px;
+        
        
+    }
+
+
+    #myDetails {
+        width: 340px;
+        height: 600px;
+        margin-top: 25px;
+    }
+
+    .personalinfoText p{
+        font-size: 0.9rem;
     }
 }

@@ -52,3 +52,15 @@ if (user) {
 }
 
     }
+
+
+    let currentPage = window.location.pathname 
+    let targetPage = '/login-page/login.html'
+
+    let loginButton = document.getElementById("loginButton")
+
+    if (currentPage === targetPage) {
+     loginButton.style.opacity = "0.6"
+    }
+
+    

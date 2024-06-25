@@ -29,3 +29,15 @@ else {
     window.location = "signoutsucces.html"
 }
 })
+
+
+
+
+let currentPage = window.location.pathname 
+let targetPage = '/signout-page/signout.html'
+
+let signoutButtonn = document.getElementById("signoutButton")
+
+if (currentPage === targetPage) {
+ signoutButtonn.style.opacity = "0.6"
+}

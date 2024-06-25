@@ -49,3 +49,13 @@ async function signUp(){
       }
     }
 
+
+
+let currentPage = window.location.pathname 
+let targetPage = '/signup-page/Signup.html'
+
+let signupButton = document.getElementById("signupButton")
+
+if (currentPage === targetPage) {
+ signupButton.style.opacity = "0.6"
+}
