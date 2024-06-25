@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +8,12 @@
     <meta name="author" content="Flem">
     <title>ToDoTrek</title>
     <link rel="stylesheet" href="myaccount.css">
-    
 </head>
-
 <body>
-
-
     <div class="nav-bar">
         <div class="logoTextDiv">
             <a href="../index.html"><h3 class="logoText">ToDoTrek</h3></a>
         </div>
-       <!--- COMING SOON <div class="search-bar">
-            <input type="text" id="search-bar" placeholder="Search a Task..">
-        </div> -->
         <div class="buttons">
             <a href="../login-page/login.html">
                 <button class="loginButton">Login</button>
@@ -33,15 +25,9 @@
             <a href="../my-account/myaccount.html"><button class="myaccountButton">My Acc</button></a>
         </div>
     </div>
-
-
-    
-
-
-    <div id="notloggedinText" style="display: none;">Login or signup first to have acces to account information</div>
+    <div id="notloggedinText" style="display: none;">Login or signup first to have access to account information</div>
     <div class="bodyElements" id="bodyelementsId">
-       
-            <div class="textandButton">
+        <div class="textandButton">
             <div class="myaccText">
                 <p>My Account</p>
             </div>
@@ -51,48 +37,39 @@
                 <button id="comingSoon2">Coming Soon</button>
                 <button id="comingSoon3">Coming Soon</button>
             </div>
-            </div>
-    
-           
-            <div id="myDetails" style="display: block;">
-                <p class="mydetailsText">My Details</p>
-                <p class="personalInfo">Personal information</p>
-                <div class="mydetailsBody">
-                    <div class="personalinfoText">
-                        <p>Personal information coming soon</p>
-                        <div class="personalinfoBoxes">
-                            <div class="textanddivCollum1">
+        </div>
+        <div id="myDetails" style="display: block;">
+            <p class="mydetailsText">My Details</p>
+            <p class="personalInfo">Personal information</p>
+            <div class="mydetailsBody">
+                <div class="personalinfoText">
+                    <p>Personal information coming soon</p>
+                    <div class="personalinfoBoxes">
+                        <div class="textanddivCollum1">
                             First Name
-                         <div class="personalinfo1"></div>
-                         </div>
-                         <div class="textanddivCollum2">
-                            Last name
-                         <div class="personalinfo2"></div>
-                         </div>
-                         </div>
-                         
-                    </div>
-
-                    <div class="emailadresInfo">
-                        <div class="headerText">
-                            <p class="emailadresText">Email adres</p>
+                            <div class="personalinfo1"></div>
                         </div>
-                        <div class="emailadresElements">
-                            <p>this is your email address. You can log in to<br> your account with this email address</p>
-                            <div id="emailadresSpawner">
-       
-                            </div>
+                        <div class="textanddivCollum2">
+                            Last name
+                            <div class="personalinfo2"></div>
                         </div>
                     </div>
                 </div>
+                <div class="emailadresInfo">
+                    <div class="headerText">
+                        <p class="emailadresText">Email adres</p>
+                    </div>
+                    <div class="emailadresElements">
+                        <p>This is your email address. You can log in to<br> your account with this email address</p>
+                        <div id="emailadresSpawner"></div>
+                    </div>
+                </div>
             </div>
-    
-            <div id="comingSoon" style="display: none;">
-                <p>Coming Soon</p>
-            </div>
-    
+        </div>
+        <div id="comingSoon" style="display: none;">
+            <p>Coming Soon</p>
+        </div>
     </div>
-    <script type="module" src="myaccount.js"></script>
-    </body>
-    
-    </html>
+    <script type="module" src="./myaccount.js"></script>
+</body>
+</html>
