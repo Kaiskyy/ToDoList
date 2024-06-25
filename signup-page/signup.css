@@ -289,4 +289,31 @@ html {
         
     }
 
+    #passwordInput{
+        width: 300px;
+    }
+    
+    #emailInput {
+        width: 300px;
+    }
+    
+    #button {
+        width: 320px;
+    }
+
+    .loginButtonForm button::after {
+        bottom: -32px;
+    }
+
+    .makeAccText p {
+        margin-top: 38px;
+        font-size: 0.9rem;
+    }
+    .headerText {
+        font-size: 1.9rem;
+    }
+
+    .headerText p {
+        font-size: 0.9rem;
+    }
 }
