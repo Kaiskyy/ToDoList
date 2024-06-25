@@ -459,11 +459,44 @@ opacity: 0.4;
 
     #myDetails {
         width: 340px;
-        height: 600px;
+        height: 450px;
         margin-top: 25px;
+        margin-bottom: 70px;
+        margin-left: 8px;
     }
 
     .personalinfoText p{
         font-size: 0.9rem;
     }
+
+    .personalinfoBoxes {
+        display:  flex;
+        flex-direction: column;
+        margin: 0;
+        margin-right: 8px;
+    }
+
+    .textanddivCollum1 {
+        margin-left: 17px;
+        font-size: 0.8rem;
+    }
+
+    .textanddivCollum2 {
+        font-size: 0.8rem;
+    }
+    
+    .emailadresElements p {
+        font-size: 0.9rem;
+        width:45%;
+        margin: 0;
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+
+    #emailadresSpawner {
+        margin-left: 17px;
+        font-size: 0.8rem;
+        width: 40%;
+    }
+  
 }
