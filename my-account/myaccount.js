@@ -8,16 +8,16 @@ let currentPage = window.location.pathname
 let targetPage = '/my-account/myaccount.html'
 let myaccountButton = document.getElementById("myaccButton")
 
-//if (currentPage === targetPage) {
-   // const { data: { user } } = await supabase.auth.getUser()
+if (currentPage === targetPage) {
+    const { data: { user } } = await supabase.auth.getUser()
     
-  //  if (!user) {
-   //    let notloggedinText = document.getElementById("notloggedinText")
-   //    notloggedinText.style.display = "block" 
-   //    let bodyElements = document.getElementById("bodyelementsId")
-   //    bodyElements.style.opacity = "0.4"
-   // }
-//}
+    if (!user) {
+      let notloggedinText = document.getElementById("notloggedinText")
+      notloggedinText.style.display = "block" 
+      let bodyElements = document.getElementById("bodyelementsId")
+      bodyElements.style.opacity = "0.4"
+    }
+}
 
 if (currentPage === targetPage) {
     myaccountButton.style.opacity = "0.6"

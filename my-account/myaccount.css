@@ -381,10 +381,6 @@ opacity: 0.4;
         
     }
 
-    #myDetails {
-        margin-top: 330px;
-    }
-
     .bodyElements {
         display: flex;
         flex-direction: column;
@@ -460,9 +456,8 @@ opacity: 0.4;
     #myDetails {
         width: 340px;
         height: 450px;
-        margin-top: 25px;
-        margin-bottom: 70px;
-        margin-left: 8px;
+        margin: 0px auto;
+        margin-top: 15px;
     }
 
     .personalinfoText p{
@@ -497,6 +492,13 @@ opacity: 0.4;
         margin-left: 17px;
         font-size: 0.8rem;
         width: 40%;
+    }
+
+    #comingSoon {
+        width: 340px;
+        height: 450px;
+        margin: 0px auto;
+        margin-top: 15px;
     }
   
 }
