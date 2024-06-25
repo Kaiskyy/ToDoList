@@ -19,6 +19,8 @@ async function signUp(){
         password: password.value
       })
 
+      logOut()
+
       email.value = ""
       password.value = ""
 
@@ -39,4 +41,11 @@ async function signUp(){
      
     }
 
+
+    async function logOut() {
+      let { error } = await supabase.auth.signOut()
+      if (error) {
+        console.log(error)
+      }
+    }
 
