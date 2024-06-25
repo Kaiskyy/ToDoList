@@ -320,6 +320,7 @@ html {
 
     .headerText {
         font-size: 1.9rem;
+        margin-top: 30px;
     }
     
     .addTaskButton {
@@ -327,46 +328,35 @@ html {
         padding-bottom: 2.5px;
         font-size: 0.9rem;
         border-radius: 9px;
+
     }
 
-    .headerButtons button {
+    .loginButtonHeader {
         font-size: 0.9rem;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 26px;
+        padding-right: 26px;
 
+    }
+
+    .signupHeader {
+        padding-top: 11px;
+        padding-bottom: 11.2px;
+        padding-left: 22px;
+        padding-right: 22px;
+        font-size: 0.9rem;
     }
 
     .headerButtons {
         margin-top: -3%;
+        padding-bottom: 30px;
     }
 
    #taskList {
     padding-left: 7px;
    }
 
-}
-
-
-
-
-
-
-
-
-
-
-#passwordInput{
-    width: 300px;
-}
-
-#emailInput {
-    width: 300px;
-}
-
-#button {
-    width: 320px;
 }
 
  
