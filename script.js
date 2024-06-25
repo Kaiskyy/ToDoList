@@ -21,6 +21,7 @@ function addTaskToDOM(taskText, taskList) {
     listItem.style.alignItems = "center";
     listItem.style.justifyContent = "space-between";
     listItem.style.maxWidth = "100%";
+  
 
     let textContainer = document.createElement("span");
     textContainer.textContent = taskText;

@@ -341,36 +341,44 @@ opacity: 0.4;
 
 
 
+/*responsive voor mobiel*/
+
 @media only screen and (max-width: 600px) {
     .loginButton{
-    padding: 8px 15px 8px 15px;
+        padding: 9px 11px 9px 11px;
     font-size: 0.7rem;
     margin-right: 5px;
-    margin-left: -40px;
+    margin-left: -37px;
+   
     }
     .signoutButton{
-        padding: 8px 15px 8px 15px;
+        padding: 9px 11px 9px 11px;
         font-size: 0.7rem;
-        margin: 0;
         margin-right: 5px;
+       
     }
     
     .signupButton{
-        padding: 8px 15px 8px 15px;
+        padding: 9px 11px 9px 11px;
         font-size: 0.7rem;
-        margin: 0;
         margin-right: 5px;
+        
     }
     
     .myaccountButton{
-        padding: 8px 15px 8px 15px;
+        padding: 9px 11px 9px 11px;
         font-size: 0.7rem;
-       margin: 0;
-       margin-right: 5px;
+       
+       
+    }
+
+    .buttons {
+        margin-right: 40px;
     }
 
     .logoText {
-        margin-left: 30px;
+        margin-left: 10px;
+        
     }
 
 }

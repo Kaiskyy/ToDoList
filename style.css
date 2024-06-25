@@ -278,35 +278,73 @@ html {
 
  @media only screen and (max-width: 600px) {
     .loginButton{
-    padding: 8px 15px 8px 15px;
+        padding: 9px 11px 9px 11px;
     font-size: 0.7rem;
     margin-right: 5px;
-    margin-left: -40px;
+    margin-left: -37px;
+   
     }
     .signoutButton{
-        padding: 8px 15px 8px 15px;
+        padding: 9px 11px 9px 11px;
         font-size: 0.7rem;
-        margin: 0;
         margin-right: 5px;
+       
     }
     
     .signupButton{
-        padding: 8px 15px 8px 15px;
+        padding: 9px 11px 9px 11px;
         font-size: 0.7rem;
-        margin: 0;
         margin-right: 5px;
+        
     }
     
     .myaccountButton{
-        padding: 8px 15px 8px 15px;
+        padding: 9px 11px 9px 11px;
         font-size: 0.7rem;
-       margin: 0;
-       margin-right: 5px;
+       
+       
+    }
+
+    .buttons {
+        margin-right: 40px;
     }
 
     .logoText {
-        margin-left: 30px;
+        margin-left: 10px;
+        
     }
+
+    .tasksBackground {
+        width: 90%;
+    }
+
+    .headerText {
+        font-size: 1.9rem;
+    }
+    
+    .addTaskButton {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        font-size: 0.9rem;
+        border-radius: 9px;
+    }
+
+    .headerButtons button {
+        font-size: 0.9rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+    .headerButtons {
+        margin-top: -3%;
+    }
+
+   #taskList {
+    padding-left: 7px;
+   }
 
 }
 
@@ -315,5 +353,20 @@ html {
 
 
 
+
+
+
+
+#passwordInput{
+    width: 300px;
+}
+
+#emailInput {
+    width: 300px;
+}
+
+#button {
+    width: 320px;
+}
 
  
