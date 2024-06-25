@@ -273,10 +273,44 @@ html {
     }
  }
 
- @media only screen and (max-width: 2500px) {
-    .tasksBackground {
-        
-    }
+
+ /*responsive voor mobiel*/
+
+ @media only screen and (max-width: 600px) {
+.loginButton{
+padding: 9px 17px 9px 17px;
+font-size: 0.7rem;
+}
+.signoutButton{
+    padding: 9px 17px 9px 17px;
+    font-size: 0.7rem;
+}
+
+.signupButton{
+    padding: 9px 17px 9px 17px;
+    font-size: 0.7rem;
+}
+
+.myaccountButton{
+    padding: 9px 16px 9px 16px;
+    font-size: 0.7rem;
+}
+
+.tasksBackground {
+    width: 90%;
+}
+
+#input {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
  }
 
 
+
+
+
+
+
+
+ 

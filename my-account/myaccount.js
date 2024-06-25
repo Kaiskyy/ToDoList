@@ -4,34 +4,19 @@ const supabase_url = 'https://wpmhrjyktuyuhpyhxapz.supabase.co';
 export const supabase = createClient(supabase_url, puplic_key)
 
 
-window.onload = async function() {
-    let currentPage = window.location.pathname;
-    let targetPage = '/my-account/myaccount.html';
+let currentPage = window.location.pathname 
+let targetPage = '/my-account/myaccount.html';
 
-    console.log('Current Page:', currentPage);
-    console.log('Target Page:', targetPage);
-
-    if (currentPage === targetPage) {
-        console.log('Checking user authentication status...');
-        const { data: { user }, error } = await supabase.auth.getUser();
-        if (error) {
-            console.error('Error fetching user:', error.message);
-        } else {
-            console.log('User:', user);
-            if (!user) {
-                console.log('User not logged in. Displaying not logged in message...');
-                alert('Not logged in!'); // Test alert message
-                let notloggedinText = document.getElementById("notloggedinText");
-                notloggedinText.style.display = "block";
-                let bodyElements = document.getElementById("bodyelementsId");
-                bodyElements.style.opacity = "0.4";
-            }
-        }
+if (currentPage === targetPage) {
+    const { data: { user } } = await supabase.auth.getUser()
+    
+    if (!user) {
+       let notloggedinText = document.getElementById("notloggedinText")
+       notloggedinText.style.display = "block" 
+       let bodyElements = document.getElementById("bodyelementsId")
+       bodyElements.style.opacity = "0.4"
     }
-
-    // Event listeners and other functions
-};
-
+}
 
 
 let myDetailsButton = document.getElementById("myDetails1")
