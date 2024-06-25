@@ -277,35 +277,38 @@ html {
  /*responsive voor mobiel*/
 
  @media only screen and (max-width: 600px) {
-.loginButton{
-padding: 9px 17px 9px 17px;
-font-size: 0.7rem;
-}
-.signoutButton{
-    padding: 9px 17px 9px 17px;
+    .loginButton{
+    padding: 8px 15px 8px 15px;
     font-size: 0.7rem;
-}
+    margin-right: 5px;
+    margin-left: -40px;
+    }
+    .signoutButton{
+        padding: 8px 15px 8px 15px;
+        font-size: 0.7rem;
+        margin: 0;
+        margin-right: 5px;
+    }
+    
+    .signupButton{
+        padding: 8px 15px 8px 15px;
+        font-size: 0.7rem;
+        margin: 0;
+        margin-right: 5px;
+    }
+    
+    .myaccountButton{
+        padding: 8px 15px 8px 15px;
+        font-size: 0.7rem;
+       margin: 0;
+       margin-right: 5px;
+    }
 
-.signupButton{
-    padding: 9px 17px 9px 17px;
-    font-size: 0.7rem;
-}
+    .logoText {
+        margin-left: 30px;
+    }
 
-.myaccountButton{
-    padding: 9px 16px 9px 16px;
-    font-size: 0.7rem;
 }
-
-.tasksBackground {
-    width: 90%;
-}
-
-#input {
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
- }
-
 
 
 

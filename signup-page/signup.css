@@ -247,3 +247,53 @@ html {
 .makeAccText a {
     text-decoration: none;
 }
+
+
+ /*responsive voor mobiel*/
+
+ @media only screen and (max-width: 600px) {
+    .loginButton{
+    padding: 8px 15px 8px 15px;
+    font-size: 0.7rem;
+    margin-right: 5px;
+    margin-left: -40px;
+    }
+    .signoutButton{
+        padding: 8px 15px 8px 15px;
+        font-size: 0.7rem;
+        margin: 0;
+        margin-right: 5px;
+    }
+    
+    .signupButton{
+        padding: 8px 15px 8px 15px;
+        font-size: 0.7rem;
+        margin: 0;
+        margin-right: 5px;
+    }
+    
+    .myaccountButton{
+        padding: 8px 15px 8px 15px;
+        font-size: 0.7rem;
+       margin: 0;
+       margin-right: 5px;
+    }
+
+
+    #passwordInput{
+        width: 300px;
+    }
+
+    #emailInput {
+        width: 300px;
+    }
+
+    #button {
+        width: 320px;
+    }
+
+    .logoText {
+        margin-left: 30px;
+    }
+
+}
