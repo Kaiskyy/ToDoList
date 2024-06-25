@@ -321,11 +321,12 @@ html {
     .headerText {
         font-size: 1.9rem;
         margin-top: 30px;
+        font-weight: 600;
     }
     
     .addTaskButton {
-        padding-top: 2.5px;
-        padding-bottom: 2.5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
         font-size: 0.9rem;
         border-radius: 9px;
 
@@ -355,6 +356,10 @@ html {
 
    #taskList {
     padding-left: 7px;
+   }
+
+   #input {
+    padding-left: 8px;
    }
 
 }
