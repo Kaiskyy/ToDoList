@@ -321,7 +321,7 @@ html {
     .headerText {
         font-size: 1.9rem;
         margin-top: 30px;
-        font-weight: 600;
+        font-weight: 500;
     }
     
     .addTaskButton {
@@ -360,6 +360,8 @@ html {
 
    #input {
     padding-left: 8px;
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
    }
 
 }
