@@ -8,10 +8,11 @@ let targetPage = '/my-account/myaccount.html'
 let myaccountButton = document.getElementById("myaccButton")
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    getuserFunction();
-    test();
-});
+
+button.addEventListener('DOMContentLoaded', async function() {
+    test()
+    getuserFunction()
+})
 
 
 async function getuserFunction(){
