@@ -364,6 +364,10 @@ html {
     padding-bottom: 3.5px;
    }
 
+   .headerText h3 {
+    font-size: 0.9rem;
+   }
+
 }
 
  
