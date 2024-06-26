@@ -9,7 +9,7 @@ let myaccountButton = document.getElementById("myaccButton")
 
 
 
-button.addEventListener('DOMContentLoaded', async function() {
+document.addEventListener('DOMContentLoaded', async function() {
     test()
     getuserFunction()
 })
