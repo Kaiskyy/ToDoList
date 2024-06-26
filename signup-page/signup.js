@@ -19,7 +19,7 @@ async function signUp(){
         password: password.value
       })
 
-      logOut()
+    
 
       email.value = ""
       password.value = ""
@@ -32,11 +32,15 @@ async function signUp(){
         return
       }
 
+
       if (data) {
+        await logOut()
         window.location.href = "signupsucces.html"
         console.log("signup completed")
         return
       }
+
+  
 
      
     }
