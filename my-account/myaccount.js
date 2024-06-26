@@ -7,7 +7,12 @@ let currentPage = window.location.pathname
 let targetPage = '/my-account/myaccount.html'
 let myaccountButton = document.getElementById("myaccButton")
 
-getuserFunction()
+
+document.addEventListener('DOMContentLoaded', () => {
+    getuserFunction();
+    test();
+});
+
 
 async function getuserFunction(){
 
@@ -26,7 +31,6 @@ if (user) {
 
 }
 
-test()
 
 async function test() {
 
@@ -55,26 +59,26 @@ let comingSoonButton1 = document.getElementById("comingSoon1")
 let comingSoonButton2 = document.getElementById("comingSoon2")
 let comingSoonButton3 = document.getElementById("comingSoon3")
 
-myDetailsButton.addEventListener("click", function(){
+myDetailsButton.addEventListener("click", async function(){
     myDetails.style.display = 'block'
     comingSoon.style.display = "none"
     myDetails1.style.opacity = "0.4"
 })
 
 
-comingSoonButton1.addEventListener("click", function(){
+comingSoonButton1.addEventListener("click", async function(){
     comingSoon.style.display = "block"
     myDetails.style.display = "none"
     myDetails1.style.opacity = "1"
 })
 
-comingSoonButton2.addEventListener("click", function(){
+comingSoonButton2.addEventListener("click", async function(){
     comingSoon.style.display = "block"
     myDetails.style.display = "none"
     myDetails1.style.opacity = "1"
 })
 
-comingSoonButton3.addEventListener("click", function(){
+comingSoonButton3.addEventListener("click", async function(){
     comingSoon.style.display = "block"
     myDetails.style.display = "none"
     myDetails1.style.opacity = "1"
