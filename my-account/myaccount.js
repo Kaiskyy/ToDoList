@@ -3,14 +3,13 @@ const puplic_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSI
 const supabase_url = 'https://wpmhrjyktuyuhpyhxapz.supabase.co';
 export const supabase = createClient(supabase_url, puplic_key)
 
+let currentPage = window.location.pathname 
+let targetPage = '/my-account/myaccount.html'
+let myaccountButton = document.getElementById("myaccButton")
 
 getuserFunction()
 
 async function getuserFunction(){
-
-let currentPage = window.location.pathname 
-let targetPage = '/my-account/myaccount.html'
-let myaccountButton = document.getElementById("myaccButton")
 
 const { data: { user } } = await supabase.auth.getUser()
 
@@ -23,7 +22,15 @@ if (user) {
 }
 
 
-f (currentPage === targetPage) {
+
+
+}
+
+test()
+
+async function test() {
+
+if (currentPage === targetPage) {
     const { data: { user } } = await supabase.auth.getUser()
     
     if (!user) {
@@ -77,3 +84,5 @@ comingSoonButton3.addEventListener("click", function(){
 }
 
 
+   
+ 
