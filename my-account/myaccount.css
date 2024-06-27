@@ -497,7 +497,7 @@ opacity: 0.4;
     }
 
     #notloggedinText {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: 500;
         width: 250px;
         margin: 0px auto;
@@ -509,7 +509,7 @@ opacity: 0.4;
         height: 1px;
         background-color: grey;
         position: absolute;
-        bottom: 575px;
+        bottom: 74%;
         content: '';
         left:50%;
         transform: translateX(-50%);
