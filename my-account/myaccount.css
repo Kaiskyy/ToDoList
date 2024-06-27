@@ -505,15 +505,15 @@ opacity: 0.4;
     }
 
     #notloggedinText::after {
-        width: 50%;
+        width: 42%;
         height: 1px;
         background-color: grey;
         position: absolute;
-        bottom: 74%;
+        bottom: 73%;
         content: '';
         left:50%;
         transform: translateX(-50%);
-        opacity: 0.4;
+        opacity: 0.3;
     }
   
 
