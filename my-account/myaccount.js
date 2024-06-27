@@ -7,7 +7,8 @@ let currentPage = window.location.pathname
 let targetPage = '/my-account/myaccount.html'
 let myaccountButton = document.getElementById("myaccButton")
 
-
+console.log(currentPage)
+console.log(targetPage)
 
 document.addEventListener('DOMContentLoaded', async function() {
     test()
