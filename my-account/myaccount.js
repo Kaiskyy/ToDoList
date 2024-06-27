@@ -3,16 +3,56 @@ const puplic_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSI
 const supabase_url = 'https://wpmhrjyktuyuhpyhxapz.supabase.co';
 export const supabase = createClient(supabase_url, puplic_key)
 
-let currentPage = window.location.pathname 
-let targetPage = '/my-account/myaccount.html'
-let myaccountButton = document.getElementById("myaccButton")
 
-console.log(currentPage)
-console.log(targetPage)
 
 document.addEventListener('DOMContentLoaded', async function() {
-    test()
     getuserFunction()
+    const { data: { user } } = await supabase.auth.getUser()
+    
+    if (!user) {
+      let notloggedinText = document.getElementById("notloggedinText")
+      notloggedinText.style.display = "block" 
+      let bodyElements = document.getElementById("bodyelementsId")
+      bodyElements.style.opacity = "0.4"
+    }
+
+
+    let myDetailsButton = document.getElementById("myDetails1")
+    let myDetails = document.getElementById("myDetails")
+    let comingSoonButton1 = document.getElementById("comingSoon1")
+    let comingSoonButton2 = document.getElementById("comingSoon2")
+    let comingSoonButton3 = document.getElementById("comingSoon3")
+
+    myaccountButton.style.opacity = "0.6"
+    myDetails1.style.opacity = "0.4"
+  
+
+    myDetailsButton.addEventListener("click", async function(){
+        myDetails.style.display = 'block'
+        comingSoon.style.display = "none"
+        myDetails1.style.opacity = "0.4"
+    })
+    
+    
+    comingSoonButton1.addEventListener("click", async function(){
+        comingSoon.style.display = "block"
+        myDetails.style.display = "none"
+        myDetails1.style.opacity = "1"
+    })
+    
+    comingSoonButton2.addEventListener("click", async function(){
+        comingSoon.style.display = "block"
+        myDetails.style.display = "none"
+        myDetails1.style.opacity = "1"
+    })
+    
+    comingSoonButton3.addEventListener("click", async function(){
+        comingSoon.style.display = "block"
+        myDetails.style.display = "none"
+        myDetails1.style.opacity = "1"
+    })
+
+
 })
 
 
@@ -34,60 +74,7 @@ if (user) {
 }
 
 
-async function test() {
 
-if (currentPage === targetPage) {
-    const { data: { user } } = await supabase.auth.getUser()
-    
-    if (!user) {
-      let notloggedinText = document.getElementById("notloggedinText")
-      notloggedinText.style.display = "block" 
-      let bodyElements = document.getElementById("bodyelementsId")
-      bodyElements.style.opacity = "0.4"
-    }
-}
-
-if (currentPage === targetPage) {
-    myaccountButton.style.opacity = "0.6"
-}
-
-if (currentPage === targetPage) {
-    myDetails1.style.opacity = "0.4"
-}
-
-let myDetailsButton = document.getElementById("myDetails1")
-let myDetails = document.getElementById("myDetails")
-let comingSoonButton1 = document.getElementById("comingSoon1")
-let comingSoonButton2 = document.getElementById("comingSoon2")
-let comingSoonButton3 = document.getElementById("comingSoon3")
-
-myDetailsButton.addEventListener("click", async function(){
-    myDetails.style.display = 'block'
-    comingSoon.style.display = "none"
-    myDetails1.style.opacity = "0.4"
-})
-
-
-comingSoonButton1.addEventListener("click", async function(){
-    comingSoon.style.display = "block"
-    myDetails.style.display = "none"
-    myDetails1.style.opacity = "1"
-})
-
-comingSoonButton2.addEventListener("click", async function(){
-    comingSoon.style.display = "block"
-    myDetails.style.display = "none"
-    myDetails1.style.opacity = "1"
-})
-
-comingSoonButton3.addEventListener("click", async function(){
-    comingSoon.style.display = "block"
-    myDetails.style.display = "none"
-    myDetails1.style.opacity = "1"
-})
-
-
-}
 
 
    
