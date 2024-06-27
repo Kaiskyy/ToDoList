@@ -55,11 +55,7 @@ async function signUp(){
 
 
 
-let currentPage = window.location.pathname 
-let targetPage = '/signup-page/Signup.html'
-
-let signupButton = document.getElementById("signupButton")
-
-if (currentPage === targetPage) {
- signupButton.style.opacity = "0.6"
-}
+document.addEventListener('DOMContentLoaded', async function(){
+  let signupButton = document.getElementById("signupButton")
+  signupButton.style.opacity = "0.6"
+})

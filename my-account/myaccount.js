@@ -4,9 +4,11 @@ const supabase_url = 'https://wpmhrjyktuyuhpyhxapz.supabase.co';
 export const supabase = createClient(supabase_url, puplic_key)
 
 
+let myaccountButton = document.getElementById("myaccButton")
 
 document.addEventListener('DOMContentLoaded', async function() {
     getuserFunction()
+    myaccountButton.style.opacity = "0.6"
     const { data: { user } } = await supabase.auth.getUser()
     
     if (!user) {

@@ -54,13 +54,11 @@ if (user) {
     }
 
 
-    let currentPage = window.location.pathname 
-    let targetPage = '/login-page/login.html'
+document.addEventListener('DOMContentLoaded', async function(){
+  let loginButton = document.getElementById("loginButton")
+  loginButton.style.opacity = "0.6"
+})
 
-    let loginButton = document.getElementById("loginButton")
 
-    if (currentPage === targetPage) {
-     loginButton.style.opacity = "0.6"
-    }
 
     
