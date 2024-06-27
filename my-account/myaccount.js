@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', async function() {
         myDetails.style.display = 'block'
         comingSoon.style.display = "none"
         myDetails1.style.opacity = "0.4"
+        comingSoonButton1.style.opacity = "1"
+        comingSoonButton2.style.opacity = "1"
+        comingSoonButton3.style.opacity = "1"
     })
     
     
@@ -40,18 +43,30 @@ document.addEventListener('DOMContentLoaded', async function() {
         comingSoon.style.display = "block"
         myDetails.style.display = "none"
         myDetails1.style.opacity = "1"
+        comingSoonButton1.style.opacity = "0.4"
+        myDetailsButton.style.opacity = "1"
+        comingSoonButton2.style.opacity ="1"
+        comingSoonButton3.style.opacity = "1"
     })
     
     comingSoonButton2.addEventListener("click", async function(){
         comingSoon.style.display = "block"
         myDetails.style.display = "none"
         myDetails1.style.opacity = "1"
+        comingSoonButton2.style.opacity = "0.4"
+        myDetailsButton.style.opacity = "1"
+        comingSoonButton1.style.opacity = "1"
+        comingSoonButton3.style.opacity = "1"
     })
     
     comingSoonButton3.addEventListener("click", async function(){
         comingSoon.style.display = "block"
         myDetails.style.display = "none"
         myDetails1.style.opacity = "1"
+        comingSoonButton3.style.opacity = "0.4"
+        myDetailsButton.style.opacity = "1"
+        comingSoonButton1.style.opacity = "1"
+        comingSoonButton2.style.opacity ="1"
     })
 
 
