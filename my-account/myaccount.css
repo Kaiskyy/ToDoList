@@ -501,5 +501,9 @@ opacity: 0.4;
         margin: 0px auto;
         margin-top: 15px;
     }
+
+    #notloggedinText {
+        font-size: 1.1rem;
+    }
   
 }
